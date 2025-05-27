@@ -11,7 +11,7 @@ export default function ExperienceSection() {
       period: "Noviembre 2024 - Actualidad",
       description:
               `Participación en el desarrollo y automatización de un ChatBot de atención al cliente, utilizando una arquitectura basada en microservicios. El Frontend está implementado con React, mientras que el Backend está desarrollado con Node.js, Python y Go, utilizando MongoDb como base de datos, Redis para almacenar conversaciones temporales, y está alojado en los servicios en la nube de AWS. Integrando distintos servicios para asegurar escalabilidad y eficiencia en las respuestas del bot.`,
-      technologies: ["React", "Node.js", "PostgreSQL", "AWS(CloudWatch)", "Docker", "Redis", "Python" , "MongoDB", "Express.js", "Git", "CSS"],
+      technologies: ["React", "Node.js", "AWS(CloudWatch)", "Docker", "Redis", "Python" , "MongoDB", "Express.js", "Git", "CSS"],
     },
     {
       title: "Analista IT",

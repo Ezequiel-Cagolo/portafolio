@@ -46,9 +46,11 @@ export default function Home() {
           </div>
           <div className="flex items-center space-x-2">
             <ThemeToggle />
-            <Button variant="outline" size="sm" className="hidden sm:flex">
-              <Download className="h-4 w-4 mr-2" />
-              CV
+            <Button asChild variant="outline" size="sm" className="hidden sm:flex">
+              <a href={import.meta.env.BASE_URL + "Ezequiel_Cagnolo_CV.pdf"} download>
+                <Download className="h-4 w-4 mr-2" />
+                CV
+              </a>
             </Button>
           </div>
         </div>
@@ -62,6 +64,14 @@ export default function Home() {
               <div className="space-y-4">
                 <div className="inline-flex items-center rounded-full border px-3 py-1 text-sm">
                   👋 ¡Hola! Bienvenido a mi espacio digital
+                </div>
+                <div className="flex justify-center mt-4">
+                  <img
+                    src={import.meta.env.BASE_URL + "foto_cv.png"}
+                    alt="Foto de Ezequiel Cagnolo"
+                    className="w-44 h-44 rounded-xl object-cover shadow-lg"
+                    style={{ boxShadow: "0 8px 32px 0 rgba(49, 46, 129, 0.25)" }}
+                  />
                 </div>
                 <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl lg:text-7xl bg-gradient-to-r from-blue-600 via-purple-600 to-blue-800 bg-clip-text text-transparent">
                   Ezequiel Cagnolo
@@ -134,7 +144,7 @@ export default function Home() {
               <ProjectCard
                 title="Buscador de Películas"
                 description="Aplicación web para buscar y explorar películas utilizando una API"
-                image="/peliculas.png"
+                image={`${import.meta.env.BASE_URL}peliculas.png`}
                 demoLink="https://ezequiel-cagolo.github.io/Buscador-de-peliculas/"
                 codeLink="https://github.com/Ezequiel-Cagolo/Buscador-de-peliculas"
                 tags={["React", "Vite", "API"]}
