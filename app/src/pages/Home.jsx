@@ -152,10 +152,10 @@ export default function Home() {
               <ProjectCard
                 title="Python FastAPI CRUD"
                 description="API RESTful para operaciones CRUD con FastAPI y MongoDB."
-                image=""
+                image={`${import.meta.env.BASE_URL}FastAPI.png`}
                 demoLink=""
-                codeLink=""
-                tags={["Python", "MongoDB", "FastAPI", "REST"]}
+                codeLink="https://github.com/Ezequiel-Cagolo/Proyect-Backend"
+                tags={["Python", "MongoDB", "FastAPI", "Postman", "REST"]}
               />
             </div>
             <div className="text-center mt-12">
